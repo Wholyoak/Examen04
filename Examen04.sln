@@ -4,12 +4,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentacion", "Examen04\Presentacion.csproj", "{C8D2C50D-F059-4236-8F23-AA2CB98214CA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{544F2E29-8961-4584-B2DE-733F76B949E7} = {544F2E29-8961-4584-B2DE-733F76B949E7}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datos", "Datos\Datos.csproj", "{250C4490-FD0F-49E7-B674-7D556918D995}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CA45B5D7-AFD5-4443-85D1-2A86C07A8F95} = {CA45B5D7-AFD5-4443-85D1-2A86C07A8F95}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Negocio", "Negocio\Negocio.csproj", "{544F2E29-8961-4584-B2DE-733F76B949E7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{250C4490-FD0F-49E7-B674-7D556918D995} = {250C4490-FD0F-49E7-B674-7D556918D995}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidad", "Entidad\Entidad.csproj", "{CA45B5D7-AFD5-4443-85D1-2A86C07A8F95}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Backend", "Backend", "{C346EB93-FAEF-4C02-9EE3-BF0110321673}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrontEnd", "FrontEnd", "{946F72C1-541D-4A33-B441-B28600314F51}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +49,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C8D2C50D-F059-4236-8F23-AA2CB98214CA} = {946F72C1-541D-4A33-B441-B28600314F51}
+		{250C4490-FD0F-49E7-B674-7D556918D995} = {C346EB93-FAEF-4C02-9EE3-BF0110321673}
+		{544F2E29-8961-4584-B2DE-733F76B949E7} = {C346EB93-FAEF-4C02-9EE3-BF0110321673}
+		{CA45B5D7-AFD5-4443-85D1-2A86C07A8F95} = {C346EB93-FAEF-4C02-9EE3-BF0110321673}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BC20A793-C9F5-463F-B404-8CE9728FE716}
